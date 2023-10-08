@@ -29,7 +29,7 @@ st.write("Este bot analiza por medio de IA la carga emocional de tu respuesta, c
 
 with col1:
     with st.chat_message("user"):
-    st.write("¡Hola!, ¿Cómo te sientes hoy? 👋")
+        st.write("¡Hola!, ¿Cómo te sientes hoy? 👋")
 
     
     with st.expander('Escribe aquí'):
