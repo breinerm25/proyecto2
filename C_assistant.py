@@ -8,7 +8,7 @@ from gtts import gTTS
 import random
 ##import openai
 
-col1, col2 = st.columns(2, spec=[0.7, 0.3], gap="medium")
+col1, col2 = st.columns(spec=[0.7, 0.3], gap="medium")
 translator = Translator()
 frases_motivacionales = [
     "La determinación es la clave del éxito.",
