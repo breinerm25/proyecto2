@@ -37,15 +37,16 @@ frases_motivacionales = [
 ##openai.api_key = st.secrets["OPENAI_API_KEY"]
 ##if "openai_model" not in st.session_state:
     ##st.session_state["openai_model"] = "gpt-3.5-turbo"
-def texto_a_voz(texto, nombre_archivo):
-    tts = gTTS(texto, lang='es', tld='com.mx')
-    tts.save(nombre_archivo)
+
 
 with col1:
     st.header('SerenIA')
     st.caption ("Bot emocional")
     st.write("Este bot analiza por medio de IA la carga emocional de tu respuesta, con base en ello, genera respuestas afines para crear un hábito de pensamientos positivos")
 
+    def texto_a_voz(texto, nombre_archivo):
+        tts = gTTS(texto, lang='es', tld='com.mx')
+        tts.save(nombre_archivo)
 
     with st.chat_message("user"):
         st.write("¡Hola!, ¿Cómo te sientes hoy? 👋")
