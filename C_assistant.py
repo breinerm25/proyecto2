@@ -6,10 +6,14 @@ from googletrans import Translator
 
 translator = Translator()
 
-st.header('¿Cómo estuvo tu día?')
+st.header('HOW U DOING (bot)')
 
 with st.chat_message("user"):
-    st.write("Hello 👋")
+    st.write("¡Hola!, ¿Cómo estuvo tu día? 👋")
+
+prompt = st.chat_input("Say something")
+if prompt:
+    st.write(f"User has sent the following prompt: {prompt}")
 
 with st.expander('Escribe aquí'):
     text = st.text_input('')
