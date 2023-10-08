@@ -50,7 +50,7 @@ with col1:
             translation = translator.translate(text, src="es", dest="en")
             trans_text = translation.text
             blob = TextBlob(trans_text)
-            x= round(round(blob.sentiment.polarity,2) / (blob.sentiment.subjectivity+0.001),2)
+            x= round(round(blob.sentiment.polarity,4) / round(blob.sentiment.subjectivity+0.001,4),2)
             st.write("Tú respuesta corresponde a: " , x , "puntos")
             st.slider("Escala", -1.0, 1.0, x, disabled=True)
             
