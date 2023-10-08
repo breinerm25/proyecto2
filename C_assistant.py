@@ -29,8 +29,8 @@ frases_motivacionales = [
     "La confianza en ti mismo es el primer paso hacia el éxito.",
     "No importa cuán difícil sea el camino, siempre hay una forma de avanzar.",
 ]
-image = Image.open('logo.png')
-st.image(image)
+imagen = Image.open('logo.png')
+st.image(imagen, use_container_width=True)
 with col1:
     
     st.header('SerenIA')
