@@ -6,7 +6,10 @@ from googletrans import Translator
 
 
 translator = Translator()
+//Seteando IA
 openai.api_key = st.secrets["OPENAI_API_KEY"]
+if "openai_model" not in st.session_state:
+    st.session_state["openai_model"] = "gpt-3.5-turbo"
 
 st.header('HOW U DOING (bot)')
 
