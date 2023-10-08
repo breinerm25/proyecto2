@@ -41,12 +41,12 @@ with st.expander('Escribe aquí'):
         x=round(blob.sentiment.polarity,2)
         st.write(x)
         #sObjetivo.apppend(x)
-        frase = random.randint(0, len(frases_motivacionales) - 1)
+        iFrase = random.randint(0, len(frases_motivacionales) - 1)
 
         if x >= 0.5:
             st.write( 'Es un sentimiento Positivo 😊')
         elif x <= -0.5:
-            st.write(frase)
+            st.write(frases_motivacionales[iFrase])
         else:
             st.write( 'Es un sentimiento Neutral 😐')
        
