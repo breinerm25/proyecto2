@@ -7,7 +7,7 @@ from googletrans import Translator
 
 translator = Translator()
 ##Seteando IA
-openai.api_key = st.secrets["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"]
+openai.api_key = st.secrets["OPENAI_API_KEY"]
 if "openai_model" not in st.session_state:
     st.session_state["openai_model"] = "gpt-3.5-turbo"
 
