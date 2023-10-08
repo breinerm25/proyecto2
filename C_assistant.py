@@ -6,7 +6,7 @@ from googletrans import Translator
 ##import openai
 
 translator = Translator()
-sObjetivo = [] #sentimiento objetivizados por la formula polarity*subjetivity
+sObjetivo = list() #sentimiento objetivizados por la formula polarity*subjetivity
 ##Seteando IA
 ##openai.api_key = st.secrets["OPENAI_API_KEY"]
 ##if "openai_model" not in st.session_state:
