@@ -47,7 +47,7 @@ with col1:
             
             #sObjetivo.apppend(x)
             iFrase = random.randint(0, len(frases_motivacionales) - 1)
-            st.write("Frases diaria")
+            st.title("Frases diaria")
 
             if x >= 0.3:
                 st.write( 'Es un sentimiento Positivo 😊')
@@ -63,7 +63,7 @@ with col2:
     
     if (button_press == True):
         st.write(choice(frases_motivacionales))
-        flag+1
+        
 
 
 
