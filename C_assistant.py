@@ -5,11 +5,10 @@ import streamlit as st
 from googletrans import Translator
 
 translator = Translator()
-st.header('Análisis de Sentimiento')
-with st.expander('Analizar texto'):
-    text = st.text_input('Escribe por favor: ')
+st.header('¿Cómo estuvo tu día?')
+with st.expander('Escribe aquí'):
+    text = st.text_input('')
     if text:
-
         translation = translator.translate(text, src="es", dest="en")
         trans_text = translation.text
         blob = TextBlob(trans_text)
