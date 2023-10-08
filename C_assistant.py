@@ -6,6 +6,7 @@ from googletrans import Translator
 ##import openai
 
 translator = Translator()
+polaridades = []
 ##Seteando IA
 ##openai.api_key = st.secrets["OPENAI_API_KEY"]
 ##if "openai_model" not in st.session_state:
@@ -25,7 +26,7 @@ with st.expander('Escribe aquí'):
         st.write('Polarity: ', round(blob.sentiment.polarity,2))
         st.write('Subjectivity: ', round(blob.sentiment.subjectivity,2))
         x=round(blob.sentiment.polarity,2)
-        polaridades = []
+        
         polaridades.apppend(x)
         
         if x >= 0.5:
