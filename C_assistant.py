@@ -26,8 +26,8 @@ with st.expander('Escribe aquí'):
         st.write('Polarity: ', round(blob.sentiment.polarity,2))
         st.write('Subjectivity: ', round(blob.sentiment.subjectivity,2))
         x=round(blob.sentiment.polarity,2)
-        
-        polaridades.apppend(x)
+        st.write(x)
+        #polaridades.apppend(x)
         
         if x >= 0.5:
             st.write( 'Es un sentimiento Positivo 😊')
