@@ -27,7 +27,7 @@ with st.expander('Escribe aquí'):
         st.write('Subjectivity: ', round(blob.sentiment.subjectivity,2))
         x=round(blob.sentiment.polarity,2)
         st.write(x)
-        polaridades.apppend(x)
+        sObjetivo.apppend(x)
         
         if x >= 0.5:
             st.write( 'Es un sentimiento Positivo 😊')
@@ -36,6 +36,6 @@ with st.expander('Escribe aquí'):
         else:
             st.write( 'Es un sentimiento Neutral 😐')
 
-hist_values = np.histogram(polaridades, bins=24, range=(0,24))
+hist_values = np.histogram(sObjetivo, bins=24, range=(0,24))
 st.bar_chart(hist_values)
         
