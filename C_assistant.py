@@ -57,7 +57,10 @@ with col1:
 with col2:
     st.title("Frase felíz")
     button_press = st.button("Generar")
-    st.write(choice(frases_motivacionales))
+    if (button_press == False):
+        st.write(choice(frases_motivacionales))
+    else:
+        st.stop()
 
 
 
