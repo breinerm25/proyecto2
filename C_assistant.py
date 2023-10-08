@@ -2,7 +2,7 @@ from textblob import TextBlob
 import pandas as pd
 import streamlit as st
 from googletrans import Translator
-pip install openai streamlit
+import openai
 
 translator = Translator()
 ##Seteando IA
