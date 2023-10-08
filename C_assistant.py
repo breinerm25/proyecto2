@@ -52,7 +52,7 @@ with col1:
             blob = TextBlob(trans_text)
             x= round(round(blob.sentiment.polarity,2) / (blob.sentiment.subjectivity+0.001),2)
             st.write("Tú respuesta corresponde a: " , x , "puntos")
-            st.slider("Escala", -1, 1, x, disabled=True)
+            st.slider("Escala", -1.0, 1.0, x, disabled=True)
             
             #sObjetivo.apppend(x)
             iFrase = random.randint(0, len(frases_motivacionales) - 1)
