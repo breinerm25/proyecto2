@@ -36,10 +36,9 @@ with st.expander('Escribe aquí'):
         translation = translator.translate(text, src="es", dest="en")
         trans_text = translation.text
         blob = TextBlob(trans_text)
-        st.write('Polarity: ', round(blob.sentiment.polarity,2))
-        st.write('Subjectivity: ', round(blob.sentiment.subjectivity,2))
         x= round(round(blob.sentiment.polarity,2) / (blob.sentiment.subjectivity+0.001),2)
-        st.write(x)
+        st.write("Tú respuesta corresponde a: " + x + "puntos")
+        
         #sObjetivo.apppend(x)
         iFrase = random.randint(0, len(frases_motivacionales) - 1)
 
