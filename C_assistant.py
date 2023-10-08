@@ -48,6 +48,6 @@ with st.expander('Escribe aquí'):
         elif x <= -0.5:
             st.write(frases_motivacionales[iFrase])
         else:
-            st.write( 'Todo va a estar bien, sigue esforzandote un poco más')
-            
+            st.write('Si necesitas ayuda, no dudes en pedirla. Estoy para escucharte si me dices un poco más')
+
        
