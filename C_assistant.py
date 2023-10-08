@@ -64,8 +64,7 @@ with col2:
     if (button_press == True):
         st.write(choice(frases_motivacionales))
         flag+1
-    elif (flag == 1):
-        st.stop()
+
 
 
 
