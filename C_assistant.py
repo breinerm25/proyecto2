@@ -3,10 +3,21 @@ import pandas as pd
 import numpy as np
 import streamlit as st
 from googletrans import Translator
+from gtts import gTTS
+from IPython.display import Audio
+import random
 ##import openai
 
 translator = Translator()
-#sObjetivo = list() #sentimiento objetivizados por la formula polarity*subjetivity
+frases_motivacionales = [
+    "La determinación es la clave del éxito.",
+    "La perseverancia supera cualquier obstáculo.",
+    "Cada día es una oportunidad para crecer y mejorar.",
+    "La pasión por lo que haces marca la diferencia.",
+    "El camino hacia el éxito está lleno de desafíos, ¡Tú puedes superarlos!",
+    "Eres lo mejor en lo que haces, confía en tu proceso",
+]
+#sObjetivo = list() #sentimiesnto objetivizados por la formula polarity*subjetivity
 ##Seteando IA
 ##openai.api_key = st.secrets["OPENAI_API_KEY"]
 ##if "openai_model" not in st.session_state:
@@ -32,7 +43,7 @@ with st.expander('Escribe aquí'):
         if x >= 0.5:
             st.write( 'Es un sentimiento Positivo 😊')
         elif x <= -0.5:
-            st.write( 'Es un sentimiento Negativo 😔')
+            st.write(random.randint(0, len(frases_motivacionales) - 1))
         else:
             st.write( 'Es un sentimiento Neutral 😐')
 
