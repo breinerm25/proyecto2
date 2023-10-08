@@ -43,9 +43,9 @@ with st.expander('Escribe aquí'):
         #sObjetivo.apppend(x)
         iFrase = random.randint(0, len(frases_motivacionales) - 1)
 
-        if x >= 0.5:
+        if x >= 0.3:
             st.write( 'Es un sentimiento Positivo 😊')
-        elif x <= -0.5:
+        elif x <= -0.2:
             st.write(frases_motivacionales[iFrase])
         else:
             st.write('Si necesitas ayuda, no dudes en pedirla. Estoy para escucharte si me dices un poco más')
