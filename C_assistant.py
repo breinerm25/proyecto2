@@ -71,10 +71,12 @@ with col1:
             elif x <= -0.2:
                 st.write(frases_motivacionales[iFrase])
                 texto_a_voz(frases_motivacionales[iFrase], 'respuesta.mp3')
+                st.audio('respuesta.mp3', format='audio/mp3')
             else:
                 st.write('Si necesitas ayuda, no dudes en pedirla. Estoy para escucharte si me dices un poco más')
                 texto_a_voz('Si necesitas ayuda, no dudes en pedirla. Estoy para escucharte si me dices un poco más', 'respuesta.mp3')
-                    
+                st.audio('respuesta.mp3', format='audio/mp3')
+                   
 with col2:
     st.title("Frase felíz 😊")
     button_press = st.button("Generar")
