@@ -38,7 +38,7 @@ frases_motivacionales = [
 ##if "openai_model" not in st.session_state:
     ##st.session_state["openai_model"] = "gpt-3.5-turbo"
 def texto_a_voz(texto, nombre_archivo):
-    tts = gTTS(texto, lang='es')
+    tts = gTTS(texto, lang='es', tld='com.mx')
     tts.save(nombre_archivo)
 
 with col1:
@@ -76,7 +76,7 @@ with col1:
                 st.write('Si necesitas ayuda, no dudes en pedirla. Estoy para escucharte si me dices un poco más')
                 texto_a_voz('Si necesitas ayuda, no dudes en pedirla. Estoy para escucharte si me dices un poco más', 'respuesta.mp3')
                 st.audio('respuesta.mp3', format='audio/mp3')
-                   
+
 with col2:
     st.title("Frase felíz 😊")
     button_press = st.button("Generar")
