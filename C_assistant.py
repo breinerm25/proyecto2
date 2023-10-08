@@ -28,7 +28,7 @@ st.header('HOW U DOING (bot)')
 
 
 with st.chat_message("user"):
-    st.write("¡Hola!, ¿Cómo estuvo tu día? 👋")
+    st.write("¡Hola!, ¿Cómo te sientes hoy? 👋")
 
 with st.expander('Escribe aquí'):
     text = st.text_input('')
