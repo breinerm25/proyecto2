@@ -34,9 +34,10 @@ image = Image.open('logo.png')
 st.image(image, width=200)
 
 with col1:
-    st.image(image)
+    
     st.header('SerenIA')
     st.caption ("Bot emocional")
+    st.image(image)
     st.write("Este bot analiza por medio de IA la carga emocional de tu respuesta, con base en ello, genera respuestas afines para crear un hábito de pensamientos positivos")
 
     def texto_a_voz(texto, nombre_archivo):
