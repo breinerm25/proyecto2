@@ -49,7 +49,4 @@ with st.expander('Escribe aquí'):
             st.write(frase)
         else:
             st.write( 'Es un sentimiento Neutral 😐')
-
-
-tts = gTTS(frase, lang=output_language, tld=tld, slow=False)
        
