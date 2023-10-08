@@ -26,10 +26,12 @@ frases_motivacionales = [
 ##if "openai_model" not in st.session_state:
     ##st.session_state["openai_model"] = "gpt-3.5-turbo"
 
-st.header('HOW U DOING (bot)')
-st.write("Este bot analiza por medio de IA la carga emocional de tu respuesta, con base en ello, genera respuestas afines para crear un hábito de pensamientos positivos")
 
 with col1:
+    st.header('HOW U DOING (bot)')
+    st.write("Este bot analiza por medio de IA la carga emocional de tu respuesta, con base en ello, genera respuestas afines para crear un hábito de pensamientos positivos")
+
+
     with st.chat_message("user"):
         st.write("¡Hola!, ¿Cómo te sientes hoy? 👋")
 
