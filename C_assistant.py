@@ -30,7 +30,7 @@ frases_motivacionales = [
     "No importa cuán difícil sea el camino, siempre hay una forma de avanzar.",
 ]
 imagen = Image.open('logo.png')
-st.image(imagen, use_container_width=True)
+st.image(imagen)
 with col1:
     
     st.header('SerenIA')
