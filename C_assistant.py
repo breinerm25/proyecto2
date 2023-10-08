@@ -35,4 +35,5 @@ with st.expander('Escribe aquí'):
             st.write( 'Es un sentimiento Neutral 😐')
 
 hist_values = np.histogram(polaridades, bins=24, range=(0,24))[0]
+st.bar_chart(hist_values)
         
