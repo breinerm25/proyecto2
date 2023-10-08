@@ -1,6 +1,5 @@
 import streamlit as st
 from textblob import TextBlob
-from googletrans import Translator
 from gtts import gTTS
 import random
 from random import choice
