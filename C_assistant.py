@@ -6,7 +6,7 @@ from googletrans import Translator
 ##import openai
 
 translator = Translator()
-polaridades = []
+sObjetivo = [] #sentimiento objetivizados por la formula polarity*subjetivity
 ##Seteando IA
 ##openai.api_key = st.secrets["OPENAI_API_KEY"]
 ##if "openai_model" not in st.session_state:
@@ -27,7 +27,7 @@ with st.expander('Escribe aquí'):
         st.write('Subjectivity: ', round(blob.sentiment.subjectivity,2))
         x=round(blob.sentiment.polarity,2)
         st.write(x)
-        #polaridades.apppend(x)
+        polaridades.apppend(x)
         
         if x >= 0.5:
             st.write( 'Es un sentimiento Positivo 😊')
