@@ -1,12 +1,11 @@
 from textblob import TextBlob
 import pandas as pd
-import numpy as np
 import streamlit as st
 from googletrans import Translator
 from gtts import gTTS
-#from IPython.display import Audio
 import random
 from random import choice
+from PIL import Image
 ##import openai
 
 col1, col2 = st.columns(spec=[0.7, 0.3], gap="medium")
@@ -30,16 +29,12 @@ frases_motivacionales = [
     "La confianza en ti mismo es el primer paso hacia el éxito.",
     "No importa cuán difícil sea el camino, siempre hay una forma de avanzar.",
 ]
+image = Image.open('logo.png')
 
-
-#sObjetivo = list() #sentimiesnto objetivizados por la formula polarity*subjetivity
-##Seteando IA
-##openai.api_key = st.secrets["OPENAI_API_KEY"]
-##if "openai_model" not in st.session_state:
-    ##st.session_state["openai_model"] = "gpt-3.5-turbo"
-
+st.image(image, width=200)
 
 with col1:
+    st.image(image, use_container_width=True)
     st.header('SerenIA')
     st.caption ("Bot emocional")
     st.write("Este bot analiza por medio de IA la carga emocional de tu respuesta, con base en ello, genera respuestas afines para crear un hábito de pensamientos positivos")
