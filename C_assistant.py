@@ -31,9 +31,8 @@ frases_motivacionales = [
 ]
 imagen = Image.open('logo.png')
 with col1:
-    st.image(imagen)
-
     st.header('SerenIA')
+    st.image(imagen)
     st.caption ("Bot emocional")
     st.write("Este bot analiza por medio de IA la carga emocional de tu respuesta, con base en ello, genera respuestas afines para crear un hábito de pensamientos positivos")
 
