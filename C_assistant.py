@@ -38,7 +38,7 @@ with st.expander('Escribe aquí'):
         blob = TextBlob(trans_text)
         st.write('Polarity: ', round(blob.sentiment.polarity,2))
         st.write('Subjectivity: ', round(blob.sentiment.subjectivity,2))
-        x= round(round(blob.sentiment.polarity,2) / round(blob.sentiment.subjectivity,2),2)
+        x= round(round(blob.sentiment.polarity,2) // round(blob.sentiment.subjectivity,2),2)
         st.write(x)
         #sObjetivo.apppend(x)
         iFrase = random.randint(0, len(frases_motivacionales) - 1)
