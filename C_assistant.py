@@ -5,7 +5,12 @@ import streamlit as st
 from googletrans import Translator
 
 translator = Translator()
+
 st.header('¿Cómo estuvo tu día?')
+
+with st.chat_message("user"):
+    st.write("Hello 👋")
+
 with st.expander('Escribe aquí'):
     text = st.text_input('')
     if text:
