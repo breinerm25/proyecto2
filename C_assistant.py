@@ -19,7 +19,19 @@ frases_motivacionales = [
     "La pasión por lo que haces marca la diferencia.",
     "El camino hacia el éxito está lleno de desafíos, ¡Tú puedes superarlos!",
     "Eres lo mejor en lo que haces, confía en tu proceso",
+    "El éxito es el resultado de la perseverancia y la determinación.",
+    "Cada día es una nueva oportunidad para alcanzar tus metas.",
+    "El camino hacia tus sueños puede ser difícil, pero vale la pena recorrerlo.",
+    "No temas cometer errores; son lecciones que te acercan al éxito.",
+    "La pasión y el esfuerzo son la clave para lograr tus objetivos.",
+    "Nunca subestimes el poder de una mente positiva.",
+    "El progreso se logra dando un paso a la vez.",
+    "Tu actitud determina tu altitud en la vida.",
+    "La confianza en ti mismo es el primer paso hacia el éxito.",
+    "No importa cuán difícil sea el camino, siempre hay una forma de avanzar.",
 ]
+
+
 #sObjetivo = list() #sentimiesnto objetivizados por la formula polarity*subjetivity
 ##Seteando IA
 ##openai.api_key = st.secrets["OPENAI_API_KEY"]
