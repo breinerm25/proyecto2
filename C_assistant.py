@@ -24,6 +24,7 @@ frases_motivacionales = [
     ##st.session_state["openai_model"] = "gpt-3.5-turbo"
 
 st.header('HOW U DOING (bot)')
+st.write("Este bot analiza por medio de IA la carga emocional de tu respuesta, con base en ello, genera respuestas afines para crear un hábito de pensamientos positivos")
 
 
 
@@ -41,6 +42,7 @@ with st.expander('Escribe aquí'):
         
         #sObjetivo.apppend(x)
         iFrase = random.randint(0, len(frases_motivacionales) - 1)
+        st.h1("Frases diaria")
 
         if x >= 0.3:
             st.write( 'Es un sentimiento Positivo 😊')
