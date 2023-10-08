@@ -6,8 +6,6 @@ from random import choice
 from PIL import Image
 
 col1, col2 = st.columns(spec=[0.7, 0.3], gap="medium")
-translator = Translator()
-flag = 0
 frases_motivacionales = [
     "La determinación es la clave del éxito.",
     "La perseverancia supera cualquier obstáculo.",
