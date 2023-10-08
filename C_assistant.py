@@ -1,10 +1,12 @@
 from textblob import TextBlob
 import pandas as pd
 import streamlit as st
-
 from googletrans import Translator
 
+
+
 translator = Translator()
+openai.api_key = st.secrets["OPENAI_API_KEY"]
 
 st.header('HOW U DOING (bot)')
 
