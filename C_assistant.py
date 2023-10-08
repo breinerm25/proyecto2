@@ -42,7 +42,7 @@ with st.expander('Escribe aquí'):
         
         #sObjetivo.apppend(x)
         iFrase = random.randint(0, len(frases_motivacionales) - 1)
-        st.h1("Frases diaria")
+        st.write("Frases diaria")
 
         if x >= 0.3:
             st.write( 'Es un sentimiento Positivo 😊')
