@@ -30,9 +30,9 @@ frases_motivacionales = [
     "No importa cuán difícil sea el camino, siempre hay una forma de avanzar.",
 ]
 imagen = Image.open('logo.png')
-st.image(imagen)
 with col1:
-    
+    st.image(imagen)
+
     st.header('SerenIA')
     st.caption ("Bot emocional")
     st.write("Este bot analiza por medio de IA la carga emocional de tu respuesta, con base en ello, genera respuestas afines para crear un hábito de pensamientos positivos")
