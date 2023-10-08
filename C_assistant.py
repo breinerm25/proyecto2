@@ -4,8 +4,6 @@ import streamlit as st
 from googletrans import Translator
 import openai
 
-
-
 translator = Translator()
 ##Seteando IA
 openai.api_key = st.secrets["OPENAI_API_KEY"]
