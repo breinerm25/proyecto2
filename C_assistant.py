@@ -44,7 +44,7 @@ with col1:
         st.write("¡Hola!, ¿Cómo te sientes hoy? 👋")
 
     
-    with st.expander('Escribe aquí'):
+    with st.expander('Procura decirme como te sientes y qué contextos'):
         text = st.text_input('')
         if text:
             translation = translator.translate(text, src="es", dest="en")
