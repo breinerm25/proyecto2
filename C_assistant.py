@@ -40,7 +40,8 @@ frases_motivacionales = [
 
 
 with col1:
-    st.header('HOW U DOING (bot)')
+    st.header('SerenIA')
+    st.caption ("Bot emocional")
     st.write("Este bot analiza por medio de IA la carga emocional de tu respuesta, con base en ello, genera respuestas afines para crear un hábito de pensamientos positivos")
 
 
