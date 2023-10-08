@@ -6,6 +6,7 @@ from googletrans import Translator
 from gtts import gTTS
 #from IPython.display import Audio
 import random
+from random import choice
 ##import openai
 
 col1, col2 = st.columns(spec=[0.7, 0.3], gap="medium")
