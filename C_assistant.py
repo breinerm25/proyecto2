@@ -37,7 +37,9 @@ frases_motivacionales = [
 ##openai.api_key = st.secrets["OPENAI_API_KEY"]
 ##if "openai_model" not in st.session_state:
     ##st.session_state["openai_model"] = "gpt-3.5-turbo"
-
+def texto_a_voz(texto, nombre_archivo):
+    tts = gTTS(texto, lang='es')
+    tts.save(nombre_archivo)
 
 with col1:
     st.header('SerenIA')
@@ -82,6 +84,4 @@ with col2:
         
 
 
-def texto_a_voz(texto, nombre_archivo):
-    tts = gTTS(texto, lang='es')
-    tts.save(nombre_archivo)
+
