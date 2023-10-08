@@ -11,6 +11,7 @@ from random import choice
 
 col1, col2 = st.columns(spec=[0.7, 0.3], gap="medium")
 translator = Translator()
+flag = 0
 frases_motivacionales = [
     "La determinación es la clave del éxito.",
     "La perseverancia supera cualquier obstáculo.",
@@ -57,7 +58,7 @@ with col1:
 with col2:
     st.title("Frase felíz")
     button_press = st.button("Generar")
-    flag == 0
+    
     if (button_press == True):
         st.write(choice(frases_motivacionales))
         flag+1
