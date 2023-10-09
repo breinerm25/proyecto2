@@ -1,5 +1,6 @@
 from textblob import TextBlob
 import streamlit as st
+import pandas as pd
 from googletrans import Translator
 from gtts import gTTS
 import random
