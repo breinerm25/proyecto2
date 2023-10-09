@@ -6,7 +6,7 @@ from gtts import gTTS
 import random
 from random import choice
 from PIL import Image
-##import openai
+
 
 col1, col2 = st.columns(spec=[0.7, 0.3], gap="medium")
 translator = Translator()
