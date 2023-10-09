@@ -50,7 +50,7 @@ with col1:
             blob = TextBlob(trans_text)
             x= round(blob.sentiment.polarity,)
             st.write("Tú respuesta corresponde a: " , x , "puntos")
-            st.slider("Escala", -1.0, 1.0, x, disabled=True)
+            #st.slider("Escala", -1.0, 1.0, x, disabled=True)
             
             iFrase = random.randint(0, len(frases_motivacionales) - 1)
             st.caption("Recuerda...")
