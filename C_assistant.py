@@ -40,7 +40,7 @@ with col1:
         tts.save(nombre_archivo)
 
     with st.chat_message("user"):
-        st.write("¡Hola!, ¿Cómo te sientes hoy? 👋")
+        st.write("¡Hola!, ¿Cómo te fue hoy? 👋")
 
     
     with st.expander('Escribe aquí como te sientes y en qué contextos'):
