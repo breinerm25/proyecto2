@@ -48,9 +48,9 @@ with col1:
             translation = translator.translate(text, src="es", dest="en")
             trans_text = translation.text
             blob = TextBlob(trans_text)
-            x= round(blob.sentiment.polarity,)
+            x= round(blob.sentiment.polarity,3)
             st.write("Tú respuesta corresponde a: " , x , "puntos")
-            #st.slider("Escala", -1.0, 1.0, x, disabled=True)
+            st.slider("Escala", -1.0, 1.0, x, disabled=True)
             
             iFrase = random.randint(0, len(frases_motivacionales) - 1)
             st.caption("Recuerda...")
