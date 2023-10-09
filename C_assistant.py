@@ -51,7 +51,6 @@ with col1:
             st.write("Tú respuesta corresponde a: " , x , "puntos")
             st.slider("Escala", -1.0, 1.0, x, disabled=True)
             
-            #sObjetivo.apppend(x)
             iFrase = random.randint(0, len(frases_motivacionales) - 1)
             st.caption("Recuerda...")
 
