@@ -1,14 +1,16 @@
 from textblob import TextBlob
-import streamlit as st
 import pandas as pd
+import streamlit as st
 from googletrans import Translator
 from gtts import gTTS
 import random
 from random import choice
 from PIL import Image
+##import openai
 
 col1, col2 = st.columns(spec=[0.7, 0.3], gap="medium")
 translator = Translator()
+flag = 0
 frases_motivacionales = [
     "La determinación es la clave del éxito.",
     "La perseverancia supera cualquier obstáculo.",
@@ -48,10 +50,11 @@ with col1:
             translation = translator.translate(text, src="es", dest="en")
             trans_text = translation.text
             blob = TextBlob(trans_text)
-            x= round(blob.sentiment.polarity,3)
+            x= round(round(blob.sentiment.polarity,2) / (blob.sentiment.subjectivity+0.001),2)
             st.write("Tú respuesta corresponde a: " , x , "puntos")
             st.slider("Escala", -1.0, 1.0, x, disabled=True)
             
+            #sObjetivo.apppend(x)
             iFrase = random.randint(0, len(frases_motivacionales) - 1)
             st.caption("Recuerda...")
 
@@ -74,4 +77,3 @@ with col2:
     
     if (button_press == True):
         st.write(choice(frases_motivacionales))
-        
