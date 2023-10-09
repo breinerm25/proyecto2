@@ -74,6 +74,3 @@ with col2:
     if (button_press == True):
         st.write(choice(frases_motivacionales))
         
-
-
-
